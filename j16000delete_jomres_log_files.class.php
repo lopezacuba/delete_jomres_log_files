@@ -42,7 +42,15 @@ foreach($files as $file){ // iterate files
     echo 'Deleted => ' . $file . '<br>';
   }
 }
- 
+
+ $files = glob(JOMRESCONFIG_ABSOLUTE_PATH.JOMRES_ROOT_DIRECTORY.JRDS.'logs/*.html'); // get all file names
+foreach($files as $file){ // iterate files
+  if(is_file($file)) {
+    unlink($file); // delete file
+    echo 'Deleted => ' . $file . '<br>';
+  }
+}
+  
 
 
 
