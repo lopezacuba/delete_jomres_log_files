@@ -11,7 +11,7 @@ defined('_JOMRES_INITCHECK') or die('');
 	 * 
 	 */
 
-class j16000delete_log_files
+class j16000delete_jomres_log_files
 {	
 	/**
 	 *
