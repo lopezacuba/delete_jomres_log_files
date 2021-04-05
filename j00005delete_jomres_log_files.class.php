@@ -23,7 +23,7 @@ class j00005delete_jomres_log_files  {
 
 		
 		$jomres_menu = jomres_singleton_abstract::getInstance('jomres_menu');
-		$jomres_menu->add_admin_item(70, jr_gettext('JOMRES_DELETEREGISTRYREBUILD', 'JOMRES_DELETEREGISTRYREBUILD', false), $task = 'delete_log_files', 'fa-refresh');
+		$jomres_menu->add_admin_item(70, jr_gettext('JOMRES_DELETEREGISTRYREBUILD', 'JOMRES_DELETEREGISTRYREBUILD', false), $task = 'delete_jomres_log_files', 'fa-refresh');
 		
 	}
 	
