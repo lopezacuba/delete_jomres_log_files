@@ -4,7 +4,7 @@
 defined( '_JOMRES_INITCHECK' ) or die( '' );
 // ################################################################
 
-class j00005delete_log_files {
+class j00005delete_jomres_log_files  {
 	function __construct() {
 		$MiniComponents =jomres_getSingleton('mcHandler');
 		if ($MiniComponents->template_touch) { $this->template_touchable=false; return; }
