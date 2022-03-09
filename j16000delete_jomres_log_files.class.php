@@ -51,7 +51,13 @@ foreach($files as $file){ // iterate files
   }
 }
   
-
+ $files = glob(JOMRESCONFIG_ABSOLUTE_PATH.JOMRES_ROOT_DIRECTORY.JRDS.'logs/*.zip'); // get all file names
+foreach($files as $file){ // iterate files
+  if(is_file($file)) {
+    unlink($file); // delete file
+    echo 'Deleted => ' . $file . '<br>';
+  }
+}
 
 
 	}   
